@@ -1,0 +1,17 @@
+Feature Name;Type;Description;Example Value
+Current_Stock;Numeric;Number of units currently in stock for the product;150
+Lag_1;Numeric;Quantity sold 1 month ago;80
+Lag_2;Numeric;Quantity sold 2 months ago;60
+Lag_3;Numeric;Quantity sold 3 months ago;90
+Rolling_Mean_3;Numeric;Average quantity sold over the last 3 months;76.7
+Rolling_Mean_6;Numeric;Average quantity sold over the last 6 months;70.5
+Month_Num;Numeric;Calendar month as a number (1 = Jan, ..., 12 = Dec);5
+Year;Numeric;Year of the record;2025
+Group_Code_Encoded;Numeric;Encoded product group identifier;12
+Months_Since_Last_Sale;Numeric;Number of months since the last sale of this product;1
+Product Group Label;Categorical (Encoded);Product type/category (mapped from string to integer);Bebeshki letni kolichki
+Is_November;Binary (0/1);1 if current month is November (for seasonal patterns);0
+Is_New;Binary (0/1);1 if the product is newly launched;0
+Is_Discontinued;Binary (0/1);1 if the product is discontinued;0
+Belongs_to_Top_3_Groups;Binary (0/1);1 if the product belongs to the top 3 performing categories;1
+Stockout_Risk;Binary (0/1);1 if the product is at risk of stockout based on demand vs inventory;0
